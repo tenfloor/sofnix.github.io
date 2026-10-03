@@ -1,0 +1,12 @@
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-brand">
+      <span class="foot-word">Sof<i>nix</i></span>
+      <span>© <span id="yr">{{ site.time | date: '%Y' }}</span> {{ site.data.company.name }} {{ site.data.company.name_en }} · Since {{ site.data.company.since }}</span>
+    </div>
+    <address>
+      {{ site.data.company.address }}<br>
+      TEL {{ site.data.company.phone }} · FAX {{ site.data.company.fax }} · {{ site.data.company.email }}
+    </address>
+  </div>
+</footer>

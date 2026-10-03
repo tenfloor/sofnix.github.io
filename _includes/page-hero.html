@@ -1,0 +1,10 @@
+{%- comment -%} Sub-page title band. Params: label, title, desc {%- endcomment -%}
+<div class="hero-band">
+  <div class="page-hero">
+    <p class="eyebrow">{{ include.label }}</p>
+    <h1>{{ include.title }}</h1>
+    {%- if include.desc %}
+    <p class="lead">{{ include.desc }}</p>
+    {%- endif %}
+  </div>
+</div>

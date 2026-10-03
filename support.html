@@ -1,0 +1,57 @@
+---
+layout: default
+title: 문의
+permalink: /support.html
+description: 소프닉스 연락처, 자주 묻는 질문, 연혁 ─ 경기도 안양시 만안구 덕천로 152번길 25 안양아이에스비즈타워센트럴 B동 717호.
+---
+{%- assign c = site.data.company -%}
+{% include page-hero.html label="Contact & Support" title="문의" desc="제품 및 개발 관련 문의를 환영합니다." %}
+
+<section>
+  <div class="contact">
+    <div class="info">
+      <div class="row">
+        <span class="k">주소</span>
+        <span class="v" id="addr">{{ c.address }}</span>
+        <button class="copy" type="button" id="copy-addr">복사</button>
+      </div>
+      <div class="row"><span class="k">전화</span><span class="v">{{ c.phone }}</span><span></span></div>
+      <div class="row"><span class="k">팩스</span><span class="v">{{ c.fax }}</span><span></span></div>
+      <div class="row"><span class="k">이메일</span><span class="v">{{ c.email }}</span><span></span></div>
+      <div class="row maps">
+        <span class="k">지도</span>
+        <span class="v"><a href="https://map.naver.com/p/search/{{ c.address | uri_escape }}" target="_blank" rel="noopener">네이버 지도</a> · <a href="https://map.kakao.com/?q={{ c.address | uri_escape }}" target="_blank" rel="noopener">카카오맵</a></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="cta-box">
+      <h3>주문, 견적, 제안 모두 환영합니다</h3>
+      <p>주문·견적 문의나 제안, 아이디어가 있으시면 이메일 {{ c.email }} 로 연락 주세요.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">FAQ</div>
+    <div><h2>자주 묻는 질문</h2></div>
+  </div>
+  <dl class="faq">
+    {%- for f in site.data.faq %}
+    <dt>{{ f.q }}</dt>
+    <dd>{{ f.a }}</dd>
+    {%- endfor %}
+  </dl>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">History</div>
+    <div><h2>연혁</h2></div>
+  </div>
+  <ol class="history">
+    {%- for h in site.data.history %}
+    <li><span class="y">{{ h.date }}</span><span>{{ h.text }}</span></li>
+    {%- endfor %}
+  </ol>
+</section>

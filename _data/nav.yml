@@ -1,0 +1,9 @@
+# 상단 메뉴(GNB) ─ 순서대로 표시됩니다.
+- title: 계측·모니터링
+  url: /measure.html
+- title: 자동제어
+  url: /automation.html
+- title: CE-Meter
+  url: /cemeter.html
+- title: 문의
+  url: /support.html

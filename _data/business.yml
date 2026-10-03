@@ -1,0 +1,11 @@
+# 사업 분야 ─ 홈 화면 카드
+- tag: MEASURING & MONITORING
+  title: 계측·모니터링 시스템
+  desc: 주물용 탄소당량(Carbon Equivalent) 열분석 장비인 CE-Meter 개발 양산, 건물설비의 운전 및 장애상태를 감시하는 FMS 시스템 개발, 기상스테이션과 온습도·수분·풍향 등 센서를 이용한 (원격)측정 및 모니터링.
+  url: /measure.html
+  image: mm-product.jpg
+- tag: AUTOMATION
+  title: PLC·HMI 자동제어 시스템
+  desc: PLC 및 HMI를 이용한 각종 산업용 장비의 자동화 시스템 개발 공급.
+  url: /automation.html
+  image: at-hmi.jpg

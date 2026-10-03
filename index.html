@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{%- assign c = site.data.company -%}
+<div class="hero-band">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">{{ c.eyebrow }}</p>
+      <h1>{{ c.tagline }}</h1>
+      <p class="lead">{{ c.lead }}</p>
+      <div class="btns">
+        <a class="btn primary" href="{{ '/support.html' | relative_url }}">제품·개발 문의</a>
+        <a class="btn" href="{{ '/cemeter.html' | relative_url }}">CE-Meter 보기</a>
+      </div>
+    </div>
+    {% include cooling-curve.html %}
+  </div>
+</div>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Business</div>
+    <div>
+      <h2>사업 분야</h2>
+      <p>산업현장용 측정기와 모니터링 시스템, PLC·HMI 기반 자동제어 시스템을 개발해 납품합니다.</p>
+    </div>
+  </div>
+  <div class="biz">
+    {%- for b in site.data.business %}
+    <a class="biz-card" href="{{ b.url | relative_url }}">
+      <img src="{{ '/assets/img/photo/' | append: b.image | relative_url }}" alt="{{ b.title }} 적용 사례" loading="lazy">
+      <div class="body">
+        <span class="tag">{{ b.tag }}</span>
+        <h3>{{ b.title }}</h3>
+        <p>{{ b.desc }}</p>
+        <span class="go">자세히 보기 →</span>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Product</div>
+    <div>
+      <h2>대표 제품</h2>
+    </div>
+  </div>
+  <div class="feature">
+    <img src="{{ '/assets/img/photo/cemeter-front.jpg' | relative_url }}" alt="CE-Meter TSP-E60 전면" loading="lazy">
+    <div>
+      <span class="kicker">CE-METER · TSP-E60</span>
+      <h3>주물용 열분석 탄소당량측정기</h3>
+      <p>주철/주물 용탕의 냉각곡선을 분석해 탄소당량(CE), 탄소량(C%), 규소량(Si%)과 초정·공정 온도를 측정합니다.</p>
+      <ul class="ticks">
+        <li>최대 2분 30초 이내 측정결과 표시</li>
+        <li>측정결과 최대 3,000개 기록, USB·LAN 인쇄</li>
+        <li>측정결과를 UDP 통신(JSON 전문)으로 ERP에 연계</li>
+      </ul>
+      <a class="btn primary" href="{{ '/cemeter.html' | relative_url }}">제품 상세정보</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">R&amp;D</div>
+    <div>
+      <h2>연구개발</h2>
+    </div>
+  </div>
+  <ul class="rd">
+    {%- for r in site.data.research %}
+    <li>{{ r }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  {% include cta.html %}
+</section>

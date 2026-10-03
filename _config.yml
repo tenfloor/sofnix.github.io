@@ -1,0 +1,11 @@
+# 사이트 기본 설정 ─ 수정 후 GitHub에 올리면 1~2분 뒤 반영됩니다.
+title: 소프닉스 Sofnix
+description: 소프닉스는 주물용 열분석 탄소당량측정기 CE-Meter, 계측·모니터링 시스템, PLC·HMI 자동제어 시스템을 개발·납품합니다.
+lang: ko
+
+url: "https://sofnix.co.kr"
+baseurl: ""
+
+markdown: kramdown
+exclude:
+  - README.md

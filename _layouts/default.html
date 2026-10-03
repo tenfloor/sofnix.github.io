@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Barlow:wght@600&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+{%- assign c = site.data.company %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ c.name | jsonify }},
+  "alternateName": {{ c.name_en | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ c.address_street | jsonify }},
+    "addressLocality": {{ c.address_city | jsonify }},
+    "addressRegion": {{ c.address_region | jsonify }},
+    "addressCountry": "KR"
+  },
+  "telephone": {{ c.phone | jsonify }},
+  "faxNumber": {{ c.fax | jsonify }},
+  "email": {{ c.email | jsonify }},
+  "knowsAbout": [{% for a in site.data.business %}{{ a.title | jsonify }}, {% endfor %}"주물용 열분석 탄소당량측정기 CE-Meter", "시설 모니터링 시스템(FMS)", "기상·환경 센서 원격측정", "탄화기 자동제어", "PLC", "HMI"]
+}
+</script>
+</head>
+<body>
+{% include header.html %}
+<main class="wrap">
+{{ content }}
+</main>
+{% include footer.html %}
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

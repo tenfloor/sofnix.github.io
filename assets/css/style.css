@@ -8,20 +8,9 @@
   --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#071214; --surface:#0D1D20; --ink:#E4EEEF; --muted:#8FA6A9; --line:#18302F;
-  --accent:#3FC1B6; --accent-ink:#061416; --brand:#E4EEEF;
-  --hero-bg:#0A2125; --hero-fg:#F1F7F7; --hero-muted:#94ADB0; --hero-line:#1A3A40; --hero-grid:#102C31; --hero-accent:#5FDCD0;
-  --scope-bg:#061517; --scope-line:#1A383D; --scope-dim:#6E9095; --scope-trace:#FF9A55; --scope-te:#5FDCD0;
-  color-scheme:dark;
-}}
-:root[data-theme="dark"]{
-  --bg:#071214; --surface:#0D1D20; --ink:#E4EEEF; --muted:#8FA6A9; --line:#18302F;
-  --accent:#3FC1B6; --accent-ink:#061416; --brand:#E4EEEF;
-  --hero-bg:#0A2125; --hero-fg:#F1F7F7; --hero-muted:#94ADB0; --hero-line:#1A3A40; --hero-grid:#102C31; --hero-accent:#5FDCD0;
-  --scope-bg:#061517; --scope-line:#1A383D; --scope-dim:#6E9095; --scope-trace:#FF9A55; --scope-te:#5FDCD0;
-  color-scheme:dark;
-}
+/* Light theme only: product photos are shot on white, so the page stays light in every OS theme. */
+:root{color-scheme:light}
+
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.7;padding-inline:20px}
@@ -186,7 +175,7 @@ nav a[aria-current="page"]{color:var(--hero-fg);box-shadow:inset 0 -2px 0 var(--
 .biz-card p{margin:0;color:var(--muted);word-break:keep-all}
 .biz-card .go{margin-top:auto;padding-top:10px;color:var(--accent);font-weight:600;font-size:14px}
 .biz-card:hover{border-color:var(--accent)}
-.feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center;border:1px solid var(--line);background:var(--surface);padding:32px}
+.feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center;border:1px solid var(--line);background:#FFFFFF;padding:32px}
 .feature img{display:block;width:100%;max-width:372px;margin-inline:auto}
 .feature h3{font-family:var(--f-display);font-size:26px;margin:4px 0 10px;word-break:keep-all}
 .feature p{color:var(--muted);margin:0 0 18px;word-break:keep-all}

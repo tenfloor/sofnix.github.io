@@ -1,15 +1,14 @@
-{%- comment -%} Track records table. Param: area (measure | automation | omit for all) {%- endcomment -%}
-{%- if include.area -%}
-{%- assign rows = site.data.records | where: "area", include.area -%}
-{%- else -%}
-{%- assign rows = site.data.records -%}
-{%- endif -%}
+{%- comment -%} Development records table, newest first. {%- endcomment -%}
 <div class="table-wrap">
   <table class="records">
-    <thead><tr><th>기간</th><th>내용</th><th>발주처</th><th>지역</th></tr></thead>
+    <thead><tr><th>기간</th><th>구분</th><th>내용</th><th>발주처</th><th>지역</th></tr></thead>
     <tbody>
-      {%- for r in rows reversed %}
-      <tr><td class="d">{{ r.date }}</td><td>{{ r.title }}</td><td class="c">{{ r.client }}</td><td class="c">{{ r.place }}</td></tr>
+      {%- for r in site.data.records reversed %}
+      <tr>
+        <td class="d">{{ r.date }}</td>
+        <td><span class="kind {{ r.area }}">{% if r.area == "product" %}CE-Meter{% else %}주문 개발{% endif %}</span></td>
+        <td>{{ r.title }}</td><td class="c">{{ r.client }}</td><td class="c">{{ r.place }}</td>
+      </tr>
       {%- endfor %}
     </tbody>
   </table>

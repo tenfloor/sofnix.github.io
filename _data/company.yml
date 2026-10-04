@@ -2,8 +2,7 @@
 name: 소프닉스
 name_en: Sofnix
 tagline: Industrial Apparatus with Better Software
-eyebrow: Measuring · Monitoring · Automation
-lead: 소프닉스는 최고의 측정장비와 모니터링 및 자동제어시스템을 개발, 납품하고 있습니다. 고객에게 최고의 만족을 주는 최고의 제품으로 보답하겠습니다.
+intro: 소프닉스는 2014년 설립된 산업용 측정장비 개발 회사입니다. 주물용 열분석 탄소당량측정기 CE-Meter를 개발해 2016년부터 양산·공급하고 있습니다.
 since: 2014
 
 address: 경기도 안양시 만안구 덕천로 152번길 25 안양아이에스비즈타워센트럴 B동 717호
@@ -14,3 +13,12 @@ address_region: 경기도
 phone: 010-2611-3898
 fax: 031-420-5116
 email: pasukun@naver.com
+
+# 판매 및 A/S 대리점
+dealer:
+  name: 삼성계기
+  address: 대구광역시 동구 부동길 62-10
+  phone: 053-981-8701~2
+  fax: 053-981-1325
+  email: ssungins@hotmail.com
+  url: http://www.ssjt.co.kr

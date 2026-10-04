@@ -1,0 +1,45 @@
+---
+layout: default
+title: 회사 소개
+permalink: /about.html
+description: 소프닉스 회사 소개, 연혁, 개발 실적 ─ 2014년 설립, 주물용 열분석 탄소당량측정기 CE-Meter 개발·양산.
+---
+{%- assign c = site.data.company -%}
+{% include page-hero.html label="About Sofnix" title="회사 소개" desc=c.intro %}
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Sofnix</div>
+    <div>
+      <h2>{{ c.tagline }}</h2>
+      <p>측정 하드웨어와 그 위에서 동작하는 소프트웨어를 함께 개발합니다. CE-Meter도 이렇게 개발한 제품입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">History</div>
+    <div><h2>연혁</h2></div>
+  </div>
+  <ol class="history">
+    {%- for h in site.data.history %}
+    <li><span class="y">{{ h.date }}</span><span>{{ h.text }}</span></li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-label">Track Records</div>
+    <div>
+      <h2>개발 실적</h2>
+      <p>CE-Meter 양산과 함께, 현장 장비의 계측·제어 시스템을 주문 개발해 납품했습니다.</p>
+    </div>
+  </div>
+  {% include records.html %}
+</section>
+
+<section>
+  {% include cta.html %}
+</section>

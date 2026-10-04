@@ -2,10 +2,10 @@
 layout: default
 title: 문의
 permalink: /support.html
-description: 소프닉스 연락처, 자주 묻는 질문, 연혁 ─ 경기도 안양시 만안구 덕천로 152번길 25 안양아이에스비즈타워센트럴 B동 717호.
+description: 소프닉스 연락처와 CE-Meter 자주 묻는 질문 ─ 경기도 안양시 만안구 덕천로 152번길 25 안양아이에스비즈타워센트럴 B동 717호.
 ---
 {%- assign c = site.data.company -%}
-{% include page-hero.html label="Contact & Support" title="문의" desc="제품 및 개발 관련 문의를 환영합니다." %}
+{% include page-hero.html label="Contact & Support" title="문의" desc="CE-Meter 제품과 기술 관련 문의를 환영합니다." %}
 
 <section>
   <div class="contact">
@@ -25,8 +25,9 @@ description: 소프닉스 연락처, 자주 묻는 질문, 연혁 ─ 경기도 
       </div>
     </div>
     <div class="cta-box">
-      <h3>주문, 견적, 제안 모두 환영합니다</h3>
-      <p>주문·견적 문의나 제안, 아이디어가 있으시면 이메일 {{ c.email }} 로 연락 주세요.</p>
+      <h3>구매·A/S는 판매 대리점으로</h3>
+      <p>CE-Meter 구매, A/S, 소모품은 {{ c.dealer.name }}({{ c.dealer.phone }})에서 담당합니다. 제품 사양이나 기술 문의는 왼쪽 연락처로 주세요.</p>
+      <a class="btn ghost" href="{{ '/purchase.html' | relative_url }}">구매·A/S 안내</a>
     </div>
   </div>
 </section>
@@ -44,14 +45,3 @@ description: 소프닉스 연락처, 자주 묻는 질문, 연혁 ─ 경기도 
   </dl>
 </section>
 
-<section>
-  <div class="sec-head">
-    <div class="sec-label">History</div>
-    <div><h2>연혁</h2></div>
-  </div>
-  <ol class="history">
-    {%- for h in site.data.history %}
-    <li><span class="y">{{ h.date }}</span><span>{{ h.text }}</span></li>
-    {%- endfor %}
-  </ol>
-</section>

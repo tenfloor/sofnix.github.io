@@ -224,7 +224,7 @@ nav a[aria-current="page"]{color:var(--hero-fg);box-shadow:inset 0 -2px 0 var(--
 .faq dt::before{content:"Q. ";color:var(--accent);font-family:var(--f-mono)}
 .faq dd{margin:6px 0 0;padding-bottom:18px;border-bottom:1px solid var(--line);color:var(--muted);word-break:keep-all}
 .history{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
-.history li{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:10px 0 10px 20px;position:relative}
+.history li{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:10px 0 10px 20px;position:relative}
 .history li::before{content:"";position:absolute;left:-6px;top:18px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
 .history .y{font-family:var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
 .sim-note{border:1px dashed var(--line);padding:20px 24px;color:var(--muted)}
@@ -236,8 +236,23 @@ nav a[aria-current="page"]{color:var(--hero-fg);box-shadow:inset 0 -2px 0 var(--
   .readout b{font-size:15px}
 }
 @media (max-width:480px){
-  .records th:nth-child(4),.records td:nth-child(4){display:none}
+  .records th:nth-child(5),.records td:nth-child(5),.records th:nth-child(4),.records td:nth-child(4){display:none}
   .records td.c{white-space:normal}
 }
 .more-inline{color:var(--accent);font-weight:600}
 .logo .lw-k{justify-content:center}.logo .lw-k small{font-size:12px;letter-spacing:.35em;color:var(--hero-muted)}
+
+/* CE-Meter focus */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats div{background:var(--surface);padding:22px 20px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stats .k{font-size:13px;color:var(--muted)}
+.stats b{font-family:var(--f-mono);font-weight:500;font-size:20px;font-variant-numeric:tabular-nums;color:var(--ink);word-break:keep-all}
+.stats .tol{font-family:var(--f-mono);font-size:12px;color:var(--accent)}
+.kind{display:inline-block;font-size:12px;padding:1px 8px;border-radius:2px;white-space:nowrap;border:1px solid var(--line);color:var(--muted)}
+.kind.product{border-color:var(--accent);color:var(--accent);font-weight:600}
+.cta-strip .btns{flex:none}
+.cta-strip .btn.ghost,.cta-box .btn.ghost{background:transparent;border:1px solid currentColor;color:inherit}
+.cta-box .btn.ghost{align-self:flex-start}
+.partner .spec{margin-top:6px}
+@media (max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.stats{grid-template-columns:1fr}}

@@ -35,7 +35,7 @@
   "telephone": {{ c.phone | jsonify }},
   "faxNumber": {{ c.fax | jsonify }},
   "email": {{ c.email | jsonify }},
-  "knowsAbout": [{% for a in site.data.business %}{{ a.title | jsonify }}, {% endfor %}"주물용 열분석 탄소당량측정기 CE-Meter", "시설 모니터링 시스템(FMS)", "기상·환경 센서 원격측정", "탄화기 자동제어", "PLC", "HMI"]
+  "knowsAbout": ["주물용 열분석 탄소당량측정기", "CE-Meter", "탄소당량(CE) 측정", "열분석", "주철 용탕 성분 분석"]
 }
 </script>
 </head>

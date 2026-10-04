@@ -1,0 +1,49 @@
+---
+layout: default
+title: 구매·A/S
+permalink: /purchase.html
+description: CE-Meter 구매, A/S, CE-Cup·온도계 등 소모품 구매 안내 ─ 판매 대리점 삼성계기.
+---
+{%- assign d = site.data.company.dealer -%}
+{% include page-hero.html label="Purchase & Service" title="구매·A/S" desc="CE-Meter 구매와 A/S, 소모품은 판매 대리점에서 담당합니다." %}
+
+<section>
+  <div class="block">
+    <h3>판매 및 A/S 대리점<span class="eng">DEALER</span></h3>
+    <div>
+      <div class="partner">
+        <h4>{{ d.name }}</h4>
+        <dl class="spec">
+          <dt>주소</dt><dd>{{ d.address }}</dd>
+          <dt>전화</dt><dd>{{ d.phone }}</dd>
+          <dt>팩스</dt><dd>{{ d.fax }}</dd>
+          <dt>이메일</dt><dd>{{ d.email }}</dd>
+          <dt>홈페이지</dt><dd><a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.url | remove: 'http://' }}</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <h3>소모품·부자재<span class="eng">SUPPLIES</span></h3>
+    <div>
+      <p>CE-Cup, 열전대, 용탕 침적식 온도계, 무선형 침적식 온도계 등 관련 부자재를 {{ d.name }}에서 구매하실 수 있습니다.</p>
+      <figure><img src="{{ '/assets/img/photo/cemeter-subs.jpg' | relative_url }}" alt="CE-Cup, 열전대, 용탕 침적식 온도계, 무선형 침적식 온도계" loading="lazy"></figure>
+    </div>
+  </div>
+  <div class="block">
+    <h3>카탈로그<span class="eng">CATALOG</span></h3>
+    <div>
+      <div class="dl-row">
+        <div><b>주물용 열분석계 CE-Meter (TSP-E60) 카탈로그</b><br><span>PDF · 176 KB</span></div>
+        <a class="btn primary" href="{{ '/assets/download/CEMeter_tsp-e60.pdf' | relative_url }}" target="_blank" rel="noopener">PDF 열기</a>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <h3>제조사 기술 문의<span class="eng">MANUFACTURER</span></h3>
+    <div>
+      <p>제품 사양, 검량선 설정, ERP 연계 등 기술 관련 문의는 제조사 소프닉스로 연락 주세요.</p>
+      <a class="btn primary" href="{{ '/support.html' | relative_url }}">소프닉스 문의</a>
+    </div>
+  </div>
+</section>

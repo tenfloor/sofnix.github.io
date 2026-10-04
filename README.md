@@ -6,29 +6,26 @@ GitHub Pages가 자동으로 빌드합니다. 파일을 고쳐서 올리면 1~2�
 
 | 파일 | 내용 |
 |---|---|
-| `_data/company.yml` | 회사명, 슬로건, 소개 문장, 주소, 전화, 이메일 |
+| `_data/company.yml` | 회사명, 소개 문장, 주소·연락처, 판매 대리점(삼성계기) 정보 |
 | `_data/nav.yml` | 상단 메뉴 |
-| `_data/business.yml` | 홈 화면 사업 분야 카드 |
-| `_data/research.yml` | 홈 화면 연구개발 목록 |
-| `_data/records.yml` | 수행 실적 (`area: measure` 또는 `automation`) |
-| `_data/faq.yml` | 자주 묻는 질문 |
+| `_data/records.yml` | 개발 실적 (`area: product`=CE-Meter, `custom`=주문 개발). 날짜는 따옴표 필수 |
 | `_data/history.yml` | 연혁 |
+| `_data/faq.yml` | 자주 묻는 질문 |
 
-CE-Meter 규격과 기능은 `cemeter.html`, 사업 영역 설명은 `measure.html`, `automation.html`에서 직접 고칩니다.
+CE-Meter 규격과 기능은 `cemeter.html`, 홈 화면 문구는 `index.html`에서 직접 고칩니다.
 사진은 `assets/img/photo/`, 카탈로그 PDF는 `assets/download/`에 있습니다.
 
 ## 페이지
 
 | 주소 | 파일 |
 |---|---|
-| `/` | `index.html` |
-| `/measure.html` | `measure.html` (계측·모니터링) |
-| `/automation.html` | `automation.html` (자동제어) |
-| `/cemeter.html` | `cemeter.html` (CE-Meter) |
-| `/support.html` | `support.html` (문의, FAQ, 연혁) |
-| `/simulator.html` | 예전 주소로 들어온 방문자를 simgame.co.kr로 안내 (메뉴에는 없음) |
-
-예전 사이트와 같은 주소(measure.html 등)를 그대로 써서, 검색 결과나 기존 링크가 깨지지 않습니다.
+| `/` | `index.html` (CE-Meter 중심 홈) |
+| `/cemeter.html` | `cemeter.html` (제품 상세) |
+| `/purchase.html` | `purchase.html` (구매·A/S, 소모품, 카탈로그) |
+| `/about.html` | `about.html` (회사 소개, 연혁, 개발 실적) |
+| `/support.html` | `support.html` (연락처, FAQ) |
+| `/measure.html`, `/automation.html` | 예전 주소 → 회사 소개로 자동 이동 (메뉴에는 없음) |
+| `/simulator.html` | 예전 주소 → simgame.co.kr 안내 (메뉴에는 없음) |
 
 ## 디자인
 

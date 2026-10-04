@@ -1,80 +1,94 @@
-# 수행 실적 ─ 새 실적은 아래 형식으로 추가하면 됩니다.
-#   area: measure(계측·모니터링) 또는 automation(자동제어)
-#   date: 연.월   client: 발주처   place: 지역
+# 개발 실적 ─ 회사 소개 페이지에 표시됩니다. 위에서부터 오래된 순.
+#   area: product(CE-Meter 제품) 또는 custom(주문 개발 납품)
+#   date: "연.월" (따옴표 필수)   client: 발주처   place: 지역
+#   새 실적은 맨 아래에 같은 형식으로 추가하면 됩니다.
 
-- area: measure
-  date: 2014.5 ~ 2016.2
+- area: product
+  date: "2014.5 ~ 2016.2"
   title: 주물용 열분석계(CE-Meter) 개발 및 업체검증
-  client: (주)삼성계기
+  client: "(주)삼성계기"
   place: 대구
-- area: measure
-  date: 2016.2
+
+- area: product
+  date: "2016.2"
   title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: (주)삼성계기
+  client: "(주)삼성계기"
   place: 대구
-- area: measure
-  date: 2016.4 ~ 2016.9
+
+- area: custom
+  date: "2016.4 ~ 2016.9"
   title: 제주도 감귤연구소 외 7개소 Zigbee/CDMA 기반 원격측정 개발
-  client: (주)엔코시스
+  client: "(주)엔코시스"
   place: 제주
-- area: measure
-  date: 2016.7
+
+- area: custom
+  date: "2016.7"
   title: 시설모니터링 시스템 개발 납품
-  client: 세원파인마루
-  place: 서울
-- area: measure
-  date: 2016.12
-  title: 제주도 기상센터 원격측정 시스템 개발 및 설치 12개소
-  client: 농촌진흥청
-  place: 제주
-- area: measure
-  date: 2017.2
-  title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: (주)삼성계기
-  place: 대구
-- area: measure
-  date: 2018.2
-  title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: (주)삼성계기
-  place: 대구
-- area: measure
-  date: 2019.2
-  title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: (주)삼성계기
-  place: 대구
-- area: measure
-  date: 2019.3 ~ 2019.12
-  title: 시설모니터링 시스템 개발
-  client: 세원그리드
+  client: "세원파인마루"
   place: 서울
 
-- area: automation
-  date: 2016.9
+- area: custom
+  date: "2016.9"
   title: 탄화기 25kWh용 자동제어 개발 납품
-  client: (주)시O스
+  client: "(주)시O스"
   place: 아산
-- area: automation
-  date: 2017.2
+
+- area: custom
+  date: "2016.12"
+  title: 제주도 기상센터 원격측정 시스템 개발 및 설치 12개소
+  client: "농촌진흥청"
+  place: 제주
+
+- area: product
+  date: "2017.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: custom
+  date: "2017.2"
   title: 탄화기 50kWh용 자동제어 개발 납품
-  client: (주)엠OO스
+  client: "(주)엠OO스"
   place: 화성
-- area: automation
-  date: 2018.2
+
+- area: product
+  date: "2018.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: custom
+  date: "2018.2"
   title: 탄화기 25kWh용 자동제어 개발 납품
-  client: (주)OOOO금속제련
+  client: "(주)OOOO금속제련"
   place: 진해
-- area: automation
-  date: 2018.9
+
+- area: custom
+  date: "2018.9"
   title: 탄화기 25kWh용 자동제어 개발 납품
-  client: 지O비
+  client: "지O비"
   place: 진천
-- area: automation
-  date: 2019.3
+
+- area: product
+  date: "2019.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: custom
+  date: "2019.3 ~ 2019.12"
+  title: 시설모니터링 시스템 개발
+  client: "세원그리드"
+  place: 서울
+
+- area: custom
+  date: "2019.3"
   title: 온수조 제어 시스템 개발 납품
-  client: OO대학교
+  client: "OO대학교"
   place: 대전
-- area: automation
-  date: 2019.4
+
+- area: custom
+  date: "2019.4"
   title: 탄화기 25kWh용 자동제어 개발
   client: ""
   place: 인천 남동공단

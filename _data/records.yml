@@ -74,18 +74,6 @@
   title: 주물용 열분석계(CE-Meter) 00대 양산
   client: "(주)삼성계기"
   place: 대구
-
-- area: product
-  date: "2021.2"
-  title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: "(주)삼성계기"
-  place: 대구
-
-- area: product
-  date: "2024.2"
-  title: 주물용 열분석계(CE-Meter) 00대 양산
-  client: "(주)삼성계기"
-  place: 대구
   
 - area: custom
   date: "2019.3 ~ 2019.12"
@@ -104,3 +92,34 @@
   title: 탄화기 25kWh용 자동제어 개발
   client: ""
   place: 인천 남동공단
+
+- area: product
+  date: "2021.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: product
+  date: "2024.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: custom
+  date: "2025.2"
+  title: 초순수 정제수기 PLC/HMI 개발
+  client: "(주)한울생약"
+  place: 파주
+
+- area: custom
+  date: "2025.10"
+  title: 초순수 정제수 교반기 PLC/HMI 개발
+  client: "(주)한울생약"
+  place: 파주
+
+- area: custom
+  date: "2026.2"
+  title: 초순수 정제수기 PLC/HMI 개발
+  client: "(주)C&C"
+  place: 파주
+

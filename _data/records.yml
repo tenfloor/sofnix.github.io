@@ -75,6 +75,18 @@
   client: "(주)삼성계기"
   place: 대구
 
+- area: product
+  date: "2021.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+
+- area: product
+  date: "2014.2"
+  title: 주물용 열분석계(CE-Meter) 00대 양산
+  client: "(주)삼성계기"
+  place: 대구
+  
 - area: custom
   date: "2019.3 ~ 2019.12"
   title: 시설모니터링 시스템 개발
